@@ -1,8 +1,5 @@
-from dotenv import load_dotenv
 from dataclasses import dataclass
 from langchain_groq import ChatGroq
-
-load_dotenv()
 
 
 @dataclass

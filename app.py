@@ -1,7 +1,10 @@
+import os
 import streamlit as st
 from chatbot_agent import ChatBot
 
+os.environ["GROQ_API_KEY"] = st.secrets["GROQ_API_KEY"]
 CHATBOT = ChatBot()
+
 st.title("ChatBot")
 
 # client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
